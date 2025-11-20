@@ -122,13 +122,6 @@ O vídeo apresentará:
 
 ---
 
-## Artigo Final
-
-O PDF final estará em:  
-`/docs/artigo_final.pdf`
-
----
-
 ## Autora
 
 Victoria Lopes  

@@ -1,6 +1,6 @@
 # Monitor de Sono com IoT e Protocolo MQTT — ESP32 
 
-Este repositório contém o projeto completo do **Monitor de Sono IoT** desenvolvido para a disciplina de **Internet das Coisas (IoT)**.  
+Este repositório contém o projeto completo do **Monitor de Sono IoT** desenvolvido para a disciplina de **Objetos Inteligentes Conectados**.  
 O sistema realiza monitoramento de **frequência cardíaca (simulada)**, **nível de movimento (MPU6050)** e **saturação de oxigênio (simulada)**, classificando o sono em:
 
 - Sono Estável  

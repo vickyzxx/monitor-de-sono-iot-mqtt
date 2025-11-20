@@ -61,7 +61,7 @@ medidas/response_time
 ---
 
 Toda a documentação completa está em:  
- `/docs/documentacao_mqtt.txt`
+ `/docs/documentacao_mqtt.md`
 
 ---
 

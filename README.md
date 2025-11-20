@@ -111,22 +111,14 @@ password = ""
 
 ---
 
-## Medições de Tempo (Atuador e Sensores)
-
-Para cada sensor e atuador, faça **4 medições** e calcule a média.  
-Os resultados devem ser colocados no artigo e aqui na pasta `/imagens`.
-
----
 
 ## Vídeo Demonstrativo
 
 O vídeo apresentará:
 - Funcionamento do protótipo  
-- MQTT em tempo real  
-- Seu rosto e identificação  
-- Explicação do código  
+- MQTT em tempo real   
 
-> Link do vídeo será inserido após gravação.
+> Link do vídeo (https://youtu.be/WTWZORfzqeg)
 
 ---
 

@@ -69,9 +69,9 @@ monitor-de-sono-iot-mqtt/
 │   └── codigo_esp32.ino
 │
 ├── diagrams/            # Diagramas do projeto
-│   ├── fritzing_monitor_sono.fzz
-│   ├── fritzing_monitor_sono.png
-│   └── fluxograma_monitor_sono.png
+│   ├── diagram.json
+│   ├── diagram.png
+│   └── fluxograma.png
 │
 ├── imagens/             # Evidências, capturas de tela e gráficos
 │   ├── montagem_wokwi.png
@@ -81,9 +81,6 @@ monitor-de-sono-iot-mqtt/
 │   ├── grafico_movimento.png
 │   └── grafico_tempo_atuador.png
 │
-├── docs/                # Artigo final e guias
-│   ├── artigo_final.pdf
-│   └── guia_execucao.txt
 │
 └── README.md            # Este arquivo
 ```
@@ -143,6 +140,6 @@ O PDF final estará em:
 ## Autora
 
 Victoria Lopes  
-Trabalho final da disciplina de **Internet das Coisas — Mackenzie**  
+Trabalho final da disciplina de **Objetos Inteligentes Conectados — Mackenzie**  
 2025
 

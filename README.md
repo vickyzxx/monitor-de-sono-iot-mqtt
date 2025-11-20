@@ -60,69 +60,72 @@ medidas/response_time
 
 ---
 
-## Estrutura do Repositório
-
-```
-monitor-de-sono-iot-mqtt/
-│
-├── src/                 # Código do ESP32
-│   └── codigo_esp32.ino
-│
-├── diagrams/            # Diagramas do projeto
-│   ├── diagram.json
-│   ├── diagram.png
-│   └── fluxograma.png
-│
-├── imagens/             # Evidências, capturas de tela e gráficos
-│   ├── montagem_wokwi.png
-│   ├── mqtt_explorer.png
-│   ├── console_serial.png
-│   ├── grafico_bpm.png
-│   ├── grafico_movimento.png
-│   └── grafico_tempo_atuador.png
-│
-│
-└── README.md            # Este arquivo
-```
+Toda a documentação completa está em:  
+ `/docs/documentacao_mqtt.txt`
 
 ---
 
-## Como Executar no Wokwi
+## Hardware Utilizado
 
-1. Abra o Wokwi: https://wokwi.com  
-2. Importe o código do diretório `/src`.  
-3. O arquivo **wokwi.toml** deve conter:
+- ESP32 DevKit V1  
+- MPU6050 (acelerômetro + giroscópio)  
+- Potenciômetro (simulação de BPM/SpO2)  
+- LED RGB com resistores  
+- Protoboard + jumpers  
 
-```toml
-[wokwi]
-version = 1
-firmware = "codigo_esp32.ino"
-
-[simulation]
-version = 1
-
-[[net.interfaces]]
-type = "wifi"
-ssid = "Wokwi-GUEST"
-password = ""
-```
-
-4. Clique em **Run**.
+Documentação detalhada em:  
+ `/docs/hardware_detalhado.md`
 
 ---
 
+##  Código-Fonte
 
-## Vídeo Demonstrativo
-
-O vídeo apresentará:
-- Funcionamento do protótipo  
-- MQTT em tempo real   
-
-> Link do vídeo (https://youtu.be/WTWZORfzqeg)
+O código-fonte do ESP32 está em:  
+ `/src/sketch.ino`
 
 ---
 
-## Autora
+## Diagramas do Projeto
+
+ `/diagrams/diagram.json` — Arquivo Java do diagrama 
+ `/diagrams/diagram.png` — Diagrama Wokwi  
+ `/diagrams/fluxograma.png` — Fluxograma do sistema  
+
+---
+
+##  Resultados e Evidências
+
+As principais imagens estão em:  
+ `/imagens/`
+
+Inclui:
+
+- estado_estavel.png  
+- estado_agitado.png  
+- estado_despertar.png  
+- simulador_conectado_ao_wifi.png  
+- mqtt_explorer.png  
+
+---
+
+##  Vídeo da Demonstração
+
+O vídeo apresentando:
+- funcionamento completo  
+- MQTT em tempo real  
+
+ **https://youtu.be/WTWZORfzqeg**
+
+---
+
+##  Documentação Complementar
+
+- Guia de execução: `/docs/guia_execucao.txt`
+- Artigo final da disciplina: `/docs/artigo_final.pdf`
+
+---
+
+##  Autoria
 
 Victoria Lopes  
 Trabalho final da disciplina de **Objetos Inteligentes Conectados — Mackenzie**  

@@ -1,1 +1,75 @@
-
+{
+  "version": 1,
+  "author": "Victoria Lopes",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -12.6, "left": -54.8, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -167.96, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": -5.6, "left": 212.3, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": 80.62, "left": 117.52, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 65.9, "left": 28.6, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 72,
+      "left": 181.85,
+      "rotate": 90,
+      "attrs": { "value": "200000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 72,
+      "left": 210.65,
+      "rotate": 90,
+      "attrs": { "value": "200000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 81.6,
+      "left": 229.85,
+      "rotate": 90,
+      "attrs": { "value": "200000" }
+    },
+    {
+      "type": "esp32-devkit-v1",
+      "id": "esp32",
+      "top": -20,
+      "left": 0,
+      "attrs": { "name": "ESP32 DevKit V1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.2", "pot1:GND", "black", [ "h48", "v134.4", "h76.8" ] ],
+    [ "esp:3V3", "pot1:VCC", "red", [ "v-28.8", "h153.75", "v182.4", "h87.2" ] ],
+    [ "esp:34", "pot1:SIG", "green", [ "h-19.05", "v-76.8", "h182.4", "v182.4", "h67.6" ] ],
+    [ "esp:22", "imu1:SCL", "green", [ "h0" ] ],
+    [ "esp:3V3", "imu1:VCC", "red", [ "h-28.65", "v-48", "h364.72" ] ],
+    [ "esp:GND.2", "imu1:GND", "black", [ "h249.6", "v57.6" ] ],
+    [ "esp:GND.3", "bb1:bn.1", "black", [ "h9.6", "v116.5" ] ],
+    [ "esp:3V3", "bb1:bp.1", "red", [ "v-19.2", "h115.35", "v183.3" ] ],
+    [ "rgb1:R", "r1:1", "green", [ "v0" ] ],
+    [ "rgb1:B", "r3:1", "green", [ "v0" ] ],
+    [ "esp:26", "r2:2", "green", [ "h-28.65", "v115.2", "h432", "v-123.6" ] ],
+    [ "esp:21", "imu1:SDA", "gold", [ "h76.8", "v-19.2", "h153.52" ] ],
+    [ "rgb1:G", "r2:1", "green", [ "v0" ] ],
+    [ "rgb1:COM", "bb1:bp.23", "red", [ "v0" ] ],
+    [ "r3:2", "esp:25", "blue", [ "v123.6", "h-460.8", "v-134.4" ] ],
+    [ "esp:27", "r1:2", "red", [ "h-19.05", "v96", "h393.6" ] ],
+    [ "r1:1", "bb1:26t.b", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:26b.f", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:29t.b", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:29b.f", "", [ "$bb" ] ],
+    [ "rgb1:R", "bb1:27t.a", "", [ "$bb" ] ],
+    [ "rgb1:COM", "bb1:28t.b", "", [ "$bb" ] ],
+    [ "rgb1:G", "bb1:29t.a", "", [ "$bb" ] ],
+    [ "rgb1:B", "bb1:30t.a", "", [ "$bb" ] ],
+    [ "pot1:GND", "bb1:10b.i", "", [ "$bb" ] ],
+    [ "pot1:SIG", "bb1:11b.i", "", [ "$bb" ] ],
+    [ "pot1:VCC", "bb1:12b.i", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
